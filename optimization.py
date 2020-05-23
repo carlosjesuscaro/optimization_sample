@@ -3,6 +3,7 @@ import numpy as np
 from scipy.optimize import minimize
 from scipy import optimize
 from scipy.optimize import Bounds
+from mpl_toolkits import mplot3d
 
 def obj_func(x):
     x1 = x[0]
@@ -32,13 +33,4 @@ x0 = [1,1]
 result = minimize(obj_func, x0, method='trust-constr', bounds= bounds, constraints= constraint)
 print(result)
 
-# Plotting
-def function(x):
-    x1 = x
-    x2 = x
-    return x1**2 + x1*x2
 
-x = np.linspace(-100,100,1000)
-
-y = function(x)
-print(y)
