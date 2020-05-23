@@ -31,3 +31,14 @@ constraint = [constraint1, constraint2]
 x0 = [1,1]
 result = minimize(obj_func, x0, method='trust-constr', bounds= bounds, constraints= constraint)
 print(result)
+
+# Plotting
+def function(x):
+    x1 = x
+    x2 = x
+    return x1**2 + x1*x2
+
+x = np.linspace(-100,100,1000)
+
+y = function(x)
+print(y)
