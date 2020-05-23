@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import minimize
 from scipy import optimize
- from scipy.optimize import Bounds
+from scipy.optimize import Bounds
 
 def obj_func(x):
     x1 = x[0]
